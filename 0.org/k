@@ -28,8 +28,10 @@ boundaryField
     }
     topWall
     {
-        type            fixedValue;
-        value           uniform 0;
+        type            symmetryPlane;
+
+//      type            fixedValue;
+//      value           uniform 0;
     }
     sides1_half0
     {

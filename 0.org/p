@@ -27,7 +27,9 @@ boundaryField
     }
     topWall
     {
-        type            zeroGradient;
+        type            symmetryPlane;
+
+//      type            zeroGradient;
     }
     sides1_half0
     {

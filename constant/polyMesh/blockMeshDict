@@ -51,7 +51,8 @@ boundary
     }
     topWall
     {
-        type            wall;
+        type            symmetryPlane;
+//      type            wall;
         faces           ((4 10 11 5));
     }
 

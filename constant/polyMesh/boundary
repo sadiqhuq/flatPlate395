@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  2.2.2                                 |
+|  \\    /   O peration     | Version:  2.2.x                                 |
 |   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -25,7 +25,8 @@ FoamFile
     }
     topWall
     {
-        type            wall;
+        type            symmetryPlane;
+        inGroups        1(symmetryPlane);
         nFaces          1200;
         startFace       176500;
     }
@@ -36,6 +37,7 @@ FoamFile
         nFaces          1000;
         startFace       177700;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  sides1_half1;
     }
     sides1_half1
@@ -45,6 +47,7 @@ FoamFile
         nFaces          1000;
         startFace       178700;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  sides1_half0;
     }
     sides2_half0
@@ -54,6 +57,7 @@ FoamFile
         nFaces          1000;
         startFace       179700;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  sides2_half1;
     }
     sides2_half1
@@ -63,6 +67,7 @@ FoamFile
         nFaces          1000;
         startFace       180700;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  sides2_half0;
     }
     inout1_half0
@@ -72,6 +77,7 @@ FoamFile
         nFaces          750;
         startFace       181700;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  inout1_half1;
     }
     inout1_half1
@@ -81,6 +87,7 @@ FoamFile
         nFaces          750;
         startFace       182450;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  inout1_half0;
     }
     inout2_half0
@@ -90,6 +97,7 @@ FoamFile
         nFaces          750;
         startFace       183200;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  inout2_half1;
     }
     inout2_half1
@@ -99,6 +107,7 @@ FoamFile
         nFaces          750;
         startFace       183950;
         matchTolerance  0.0001;
+        transform       unknown;
         neighbourPatch  inout2_half0;
     }
 )

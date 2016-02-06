@@ -21,21 +21,21 @@ FoamFile
     {
         type            wall;
         nFaces          1200;
-        startFace       175300;
+        startFace       111760;
     }
     topWall
     {
         type            symmetryPlane;
         inGroups        1(symmetryPlane);
         nFaces          1200;
-        startFace       176500;
+        startFace       112960;
     }
     sides1_half0
     {
         type            cyclic;
         inGroups        1(cyclic);
         nFaces          1000;
-        startFace       177700;
+        startFace       114160;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  sides1_half1;
@@ -45,7 +45,7 @@ FoamFile
         type            cyclic;
         inGroups        1(cyclic);
         nFaces          1000;
-        startFace       178700;
+        startFace       115160;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  sides1_half0;
@@ -54,8 +54,8 @@ FoamFile
     {
         type            cyclic;
         inGroups        1(cyclic);
-        nFaces          1000;
-        startFace       179700;
+        nFaces          280;
+        startFace       116160;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  sides2_half1;
@@ -64,8 +64,8 @@ FoamFile
     {
         type            cyclic;
         inGroups        1(cyclic);
-        nFaces          1000;
-        startFace       180700;
+        nFaces          280;
+        startFace       116440;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  sides2_half0;
@@ -75,7 +75,7 @@ FoamFile
         type            cyclic;
         inGroups        1(cyclic);
         nFaces          750;
-        startFace       181700;
+        startFace       116720;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  inout1_half1;
@@ -85,7 +85,7 @@ FoamFile
         type            cyclic;
         inGroups        1(cyclic);
         nFaces          750;
-        startFace       182450;
+        startFace       117470;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  inout1_half0;
@@ -94,8 +94,8 @@ FoamFile
     {
         type            cyclic;
         inGroups        1(cyclic);
-        nFaces          750;
-        startFace       183200;
+        nFaces          210;
+        startFace       118220;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  inout2_half1;
@@ -104,8 +104,8 @@ FoamFile
     {
         type            cyclic;
         inGroups        1(cyclic);
-        nFaces          750;
-        startFace       183950;
+        nFaces          210;
+        startFace       118430;
         matchTolerance  0.0001;
         transform       unknown;
         neighbourPatch  inout2_half0;

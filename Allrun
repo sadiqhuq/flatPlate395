@@ -9,6 +9,8 @@ application=`getApplication`
 
 runApplication blockMesh
 cp -r 0.org 0
+perturbUGeneric > log.pertU
+# foamToVTK -time 0
 
 #- Run serial
 #runApplication $application

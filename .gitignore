@@ -1,6 +1,7 @@
 postProcessing/*
 log.*
 constant/extendedFeatureEdgeMesh/
+constant/cellDecomposition
 constant/polyMesh/boundary
 constant/polyMesh/boundary*
 constant/polyMesh/faces*
@@ -16,3 +17,5 @@ constant/polyMesh/pointZones*
 constant/polyMesh/refinementHistory*
 constant/polyMesh/surfaceIndex*
 constant/triSurface/*eMesh*
+processor*
+VTK*

@@ -1,4 +1,3 @@
-# flatPlate395
 ### OpenFOAM: LES of flow over a flat plate
 
 The starting point of this case is 

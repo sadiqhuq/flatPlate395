@@ -16,6 +16,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 Ubar            Ubar [ 0 1 -1 0 0 0 0 ] ( 0.1335 0 0 );
+Retau           Retau [ 0 0 0 0 0 0 0 ] 395;
 
 transportModel  Newtonian;
 

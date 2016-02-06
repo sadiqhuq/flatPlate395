@@ -1,0 +1,17 @@
+#!/bin/sh
+
+./Allclean 
+
+cp -r 0.org 0
+
+blockMesh | tee log.blockMesh
+
+# surfaceFeatureExtraxt > log.sf
+# 
+# snappyHexMesh -overwrite | tee log.shm
+
+# pisoFoam | tee log.pisoFoam
+pimpleFoam | tee log.pimnple
+
+# foamToVTK -latestTime > log.vtk
+
